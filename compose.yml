@@ -1,0 +1,29 @@
+version: '3'
+services:
+  movies:
+    images: sudhir12/moviesservice:lastest
+    ports:
+      - "80:80"
+    deploy:
+      replicas: 3
+
+  train:
+    images: sudhir12/trainservice:lastest
+    ports:
+      - "81:80"
+    deploy:
+      replicas: 3
+
+  dth:
+    images: sudhir12/dthservice:lastest
+    ports:
+      - "82:80"
+    deploy:
+      replicas: 3
+
+  recharge:
+    images: sudhir12/moviesservice:lastest
+    ports:
+      - "83:80"
+    deploy:
+      replicas: 3
