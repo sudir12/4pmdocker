@@ -1,7 +1,7 @@
 version: '3'
 services:
-  movies:
-    image: sudhir12/moviesservice:lastest
+  movie:
+    image: sudhir12/movieservice:lastest
     ports:
       - "81:80"
     deploy:
