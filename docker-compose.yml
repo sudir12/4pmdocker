@@ -22,7 +22,7 @@ services:
       replicas: 3
 
   recharge:
-    image: sudhir12/moviesservice:lastest
+    image: sudhir12/rechargeservice:lastest
     ports:
       - "84:80"
     deploy:
