@@ -1,27 +1,26 @@
 version: '3'
 services:
-  movie:
+  aws:
     image: sudhir12/aws
     ports:
       - "81:80"
     deploy:
       replicas: 3
 
-  train:
+  devops:
     image: sudhir12/devops
     ports:
       - "82:80"
     deploy:
       replicas: 3
 
-  dth:
+  azure:
     image: sudhir12/azure
     ports:
       - "83:80"
     deploy:
       replicas: 3
-
-  recharge:
+       ds:
     image: sudhir12/ds
     ports:
       - "84:80"
