@@ -3,26 +3,26 @@ services:
   aws:
     image: sudhir12/aws
     ports:
-      - "81:80"
+      - "95:80"
     deploy:
       replicas: 3
 
   devops:
     image: sudhir12/devops
     ports:
-      - "82:80"
+      - "96:80"
     deploy:
       replicas: 3
 
   azure:
     image: sudhir12/azure
     ports:
-      - "83:80"
+      - "97:80"
     deploy:
       replicas: 3
   ds:
     image: sudhir12/ds
     ports:
-      - "84:80"
+      - "98:80"
     deploy:
       replicas: 3
