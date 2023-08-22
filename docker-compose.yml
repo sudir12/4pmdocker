@@ -1,28 +1,28 @@
 version: '3'
 services:
   movie:
-    image: sudhir12/movieservice:lastest
+    image: sudhir12/aws
     ports:
       - "81:80"
     deploy:
       replicas: 3
 
   train:
-    image: sudhir12/trainservice:lastest
+    image: sudhir12/devops
     ports:
       - "82:80"
     deploy:
       replicas: 3
 
   dth:
-    image: sudhir12/dthservice:lastest
+    image: sudhir12/azure
     ports:
       - "83:80"
     deploy:
       replicas: 3
 
   recharge:
-    image: sudhir12/rechargeservice:lastest
+    image: sudhir12/ds
     ports:
       - "84:80"
     deploy:
