@@ -20,7 +20,7 @@ services:
       - "83:80"
     deploy:
       replicas: 3
-       ds:
+  ds:
     image: sudhir12/ds
     ports:
       - "84:80"
